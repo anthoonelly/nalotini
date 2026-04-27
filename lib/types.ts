@@ -4,9 +4,9 @@ export type Visibility = "public" | "verified";
 export type Category =
   // Kategorie dla "Oferuję / Szukam miejsca"
   | "Lot widokowy"
-  | "Lot turystyczny"
+  | "Lot z punktu A do punktu B"
   | "Lot szkoleniowy"
-  | "Skok w tandemie"
+  | "Skok ze spadochronu"
   | "Lot zapoznawczy"
   | "Holowanie szybowca"
   // Kategorie dla "Inna współpraca"

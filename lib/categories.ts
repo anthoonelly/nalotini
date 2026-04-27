@@ -3,9 +3,9 @@ import { Category, ListingType } from "./types";
 // Kategorie dla "Oferuję miejsce w locie" — konkretne loty z wolnym miejscem
 export const OFFER_CATEGORIES: Category[] = [
   "Lot widokowy",
-  "Lot turystyczny",
+  "Lot z punktu A do punktu B",
   "Lot szkoleniowy",
-  "Skok w tandemie",
+  "Skok ze spadochronu",
   "Lot zapoznawczy",
   "Holowanie szybowca",
   "Inne",
@@ -14,9 +14,9 @@ export const OFFER_CATEGORIES: Category[] = [
 // Kategorie dla "Szukam miejsca w locie" — szukam okazji do polecenia
 export const REQUEST_CATEGORIES: Category[] = [
   "Lot widokowy",
-  "Lot turystyczny",
+  "Lot z punktu A do punktu B",
   "Lot szkoleniowy",
-  "Skok w tandemie",
+  "Skok ze spadochronu",
   "Lot zapoznawczy",
   "Holowanie szybowca",
   "Inne",
@@ -48,11 +48,11 @@ export function categoryEmoji(c: string): string {
   switch (c) {
     case "Lot widokowy":
       return "🛩️";
-    case "Lot turystyczny":
+    case "Lot z punktu A do punktu B":
       return "🗺️";
     case "Lot szkoleniowy":
       return "🎓";
-    case "Skok w tandemie":
+    case "Skok ze spadochronu":
       return "🪂";
     case "Lot zapoznawczy":
       return "🌟";
@@ -94,7 +94,7 @@ export const ACTIVITY_SUGGESTIONS: Record<string, string[]> = {
     "Lot nad Mazury",
     "Lot nad wybrzeże",
   ],
-  "Lot turystyczny": [
+  "Lot z punktu A do punktu B": [
     "Wycieczka w drugą część Polski",
     "Lot weekendowy",
     "Lot zagraniczny",
@@ -106,7 +106,7 @@ export const ACTIVITY_SUGGESTIONS: Record<string, string[]> = {
     "Lot z instruktorem",
     "Trening procedur",
   ],
-  "Skok w tandemie": [
+  "Skok ze spadochronu": [
     "Skok klasyczny",
     "Skok z 4000m",
     "Pierwszy skok w życiu",
